@@ -9,11 +9,11 @@ package main
 import (
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
-	"kratos-silkworm/app/bd/internal/biz"
-	"kratos-silkworm/app/bd/internal/conf"
-	"kratos-silkworm/app/bd/internal/data"
-	"kratos-silkworm/app/bd/internal/server"
-	"kratos-silkworm/app/bd/internal/service"
+	"kratos-silkworm/app/shop/internal/biz"
+	"kratos-silkworm/app/shop/internal/conf"
+	"kratos-silkworm/app/shop/internal/data"
+	"kratos-silkworm/app/shop/internal/server"
+	"kratos-silkworm/app/shop/internal/service"
 )
 
 import (

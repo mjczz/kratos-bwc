@@ -15,19 +15,6 @@ else
 	API_PROTO_FILES=$(shell find api -name *.proto)
 endif
 
-ec:
-	echo $(INTERNAL_PROTO_FILES)
-
-start:
-	./bin/kratos-silkworm -conf ./configs
-
-#🍺 Project creation succeeded kratos-silkworm
-#💻 Use the following command to start the project 👇:
-#$ cd kratos-silkworm
-#$ go generate ./...
-#$ go build -o ./bin/ ./...
-#$ ./bin/kratos-silkworm -conf ./configs
-
 .PHONY: init
 # init env
 init:
@@ -74,11 +61,6 @@ all:
 	make api;
 	make config;
 	make generate;
-
-.PHONY: new_service
-
-new_service:
-	kratos new app/silkworm --nomod
 
 # show help
 help:

@@ -4,7 +4,7 @@ import (
 	"context"
 
 	v1 "kratos-silkworm/api/helloworld/v1"
-	"kratos-silkworm/internal/biz"
+	"kratos-silkworm/app/shop/internal/biz"
 )
 
 // GreeterService is a greeter service.
@@ -25,5 +25,5 @@ func (s *GreeterService) SayHello(ctx context.Context, in *v1.HelloRequest) (*v1
 	if err != nil {
 		return nil, err
 	}
-	return &v1.HelloReply{Message: "Hello From Base: " + g.Hello}, nil
+	return &v1.HelloReply{Message: "Hello From Shop:" + g.Hello}, nil
 }

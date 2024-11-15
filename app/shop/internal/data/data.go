@@ -1,15 +1,14 @@
 package data
 
 import (
-	"kratos-silkworm/app/bd/internal/conf"
+	"kratos-silkworm/app/shop/internal/conf"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/google/wire"
 )
 
 // ProviderSet is data providers.
-// var ProviderSet = wire.NewSet(NewData, NewGreeterRepo)
-var ProviderSet = wire.NewSet(NewGreeterRepo, NewData)
+var ProviderSet = wire.NewSet(NewData, NewGreeterRepo)
 
 // Data .
 type Data struct {
